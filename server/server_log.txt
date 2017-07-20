@@ -1,0 +1,426 @@
+服务器开始启动..
+
+init_server_pthread
+成功绑定
+设置监听成功
+初始化服务器成功
+服务器开始服务
+6 get conect!
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 1
+[;31m*[0m send_name: 1
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 1
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 1
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :1
+[;42m*[0m from    : server
+[;42m*[0m to      : 1
+[;42m*[0m mes     : 2
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 2
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 2
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 2
+
+
+[;44m&&&&function registe&&&&[0m 
+[;44m*[0m registe success!
+[;44m*[0m username:2
+[;44m*[0m password:2
+[;44m*[0m user_num:1
+
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :2
+[;42m*[0m from    : server
+[;42m*[0m to      : 2
+[;42m*[0m mes     : 1
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 1
+[;31m*[0m send_name: 1
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 1
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 1
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :1
+[;42m*[0m from    : server
+[;42m*[0m to      : 1
+[;42m*[0m mes     : 2
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 2
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 2
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 2
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :2
+[;42m*[0m from    : server
+[;42m*[0m to      : 2
+[;42m*[0m mes     : 0
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 1
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 2
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 1
+
+
+[;45m********login**********[0m
+[;45m*[0m 2 get online!
+[;45m*[0m statu:    0
+[;45m*[0m socket_id:6
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 3
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 1
+[;31m*[0m send_pack_num:1
+[;31m*************[0m
+
+
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :1
+[;42m*[0m from    : server
+[;42m*[0m to      : 2
+[;42m*[0m mes     : 1
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 3
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :3
+[;42m*[0m from    : server
+[;42m*[0m to      : 2
+[;42m*[0m mes     : 
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 3
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 1
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+2 down line!
+
+**[;33m *****user***1*********[0m 
+user_name  :2
+int  statu :0
+friends_num:0
+user_num   :0
+***********************
+
+
+服务器已经关闭
+服务器开始启动..
+
+init_server_pthread
+成功绑定
+设置监听成功
+初始化服务器成功
+服务器开始服务
+6 get conect!
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 1
+[;31m*[0m send_name: 1
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 1
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 1
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :1
+[;42m*[0m from    : server
+[;42m*[0m to      : 1
+[;42m*[0m mes     : 2
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 2
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 2
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 2
+
+
+[;44m&&&&function registe&&&&[0m 
+[;44m*[0m registe success!
+[;44m*[0m username:2
+[;44m*[0m password:2
+[;44m*[0m user_num:1
+
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :2
+[;42m*[0m from    : server
+[;42m*[0m to      : 2
+[;42m*[0m mes     : 1
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 2
+[;31m*[0m send_name: 22
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 2
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 2
+
+
+[;44m&&&&function registe&&&&[0m 
+[;44m*[0m registe success!
+[;44m*[0m username:22
+[;44m*[0m password:2
+[;44m*[0m user_num:2
+
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :2
+[;42m*[0m from    : server
+[;42m*[0m to      : 22
+[;42m*[0m mes     : 1
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 2
+[;31m*[0m send_name: 2
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 3
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 2
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :2
+[;42m*[0m from    : server
+[;42m*[0m to      : 2
+[;42m*[0m mes     : 0
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+服务器已经关闭
+服务器开始启动..
+
+init_server_pthread
+成功绑定
+设置监听成功
+初始化服务器成功
+服务器开始服务
+6 get conect!
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 1
+[;31m*[0m send_name: 1
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 1
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+m_file_num1:0
+m_file_num2:0
+
+
+
+deal function = 1
+
+
+[;42m*****send pack****[0m
+[;42m*[0m type    :1
+[;42m*[0m from    : server
+[;42m*[0m to      : 1
+[;42m*[0m mes     : 2
+[;42m*[0m recv_fd : 6
+[;42m*[0m pack left Now is:0
+
+
+
+
+[;31m ***PACK***[0m
+[;31m*[0m type     : 1
+[;31m*[0m send_name: 1
+[;31m*[0m recv_name: server
+[;31m*[0m mes      : 1
+[;31m*[0m send_fd   : 6
+[;31m*[0m recv_fd   : 0
+[;31m*[0m send_pack_num:0
+[;31m*************[0m
+
+
+服务器已经关闭
