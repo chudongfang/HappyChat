@@ -148,34 +148,24 @@ The ChatRoom based on Linux/Epoll
 
 ##### 3.2.1 模块1
 
-功能描述
-
-简要描述模块1的功能。
+###### 功能描述
 
 实现文件的断点发送和断点接受
 
-算法和流程图
+###### 算法和流程图
 
-详细描述根据输入数据产生输出数据的算法和流程
-
+![算法和流程图](http://img.blog.csdn.net/20160905205721785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+ 
+![算法和流程图](http://img.blog.csdn.net/20160905205844295?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
  
 
- 
+###### 函数说明
 
- 
-
-
-
-
-
-函数说明
-
-具体说明本程序中的各个函数，包括函数名称及其所在文件，功能，格式，参数，全局变量，局部变量，返回值，算法说明，使用约束等。
 
 发送文件断点续传：
 
 1.
-
+```
 void send_file()  
 
 功能：       向服务端请求发送文件，并将文件的大小发送给服务端
@@ -185,8 +175,9 @@ void send_file()
 返回值：     无
 
 算法说明：   对文件大小进行字符串解析
-
+```
 2.
+```
 
 void file_recv_begin(PACK *recv_pack)
 
@@ -203,10 +194,11 @@ void file_recv_begin(PACK *recv_pack)
 返回值：     无
 
 算法说明：   对文件大小进行字符串解析，添加数组元素
+```
 
- 
 
 3.
+```
 
 void * pthread_send_file(void *mes_t)
 
@@ -234,10 +226,11 @@ void send_file_send(int begin_location,char *file_path)
 
 算法说明：   打开文件，while循环发送文件
 
- 
+ ```
 
 4.
 
+```
 void *file_send_send(void *file_send_begin_t)
 
 功能：       在发送过程中，不断监测接收端的状态
@@ -250,10 +243,10 @@ void *file_send_send(void *file_send_begin_t)
 
 算法说明：   对文件大小进行字符串解析，while发送文件，并不断检测发送者 信息
 
- 
+ ```
 
 5.
-
+```
 void mes_sendfile_fail(int id)  
 
 功能：      处理文件上传失败，并询问是否重发，进行断点续传
@@ -291,7 +284,7 @@ void send_file_send(int begin_location,char *file_path)
 返回值：     无
 
 算法说明：   打开文件，while循环发送文件
-
+```
  
 
  
@@ -299,7 +292,7 @@ void send_file_send(int begin_location,char *file_path)
 接受文件断点续传：
 
 1.
-
+```
 void *pthread_check_file(void *arg)  
 
 功能：       不断检测文件状态，当文件传输失败，发送提醒给客户端
@@ -313,11 +306,11 @@ void *pthread_check_file(void *arg)
 返回值：     无
 
 算法说明：   while循环不断遍历  对文件大小进行字符串解析
-
+```
  
 
 2.
-
+```
 void mes_recv_requir(int id) 
 
 功能：       处理下载文件请求，询问是否接收文件，发送信息给服务端，开启 线程写文件
@@ -346,10 +339,11 @@ void *pthread_recv_file(void *par_t)
 
 算法说明：   while循环写文件
 
- 
+```
 
 3.
 
+```
 void file_send_begin(PACK *recv_pack) 
 
 功能：       客户端请求接收文件，解析出客户端已经
@@ -374,12 +368,12 @@ void *file_send_send(void *file_send_begin_t)
 
 算法说明：   对文件大小进行字符串解析   while循环发送文件
 
- 
+```
 
  
 
 4.
-
+```
 void *pthread_check_file(void *arg)  
 
 功能：       不断检测文件状态，当文件传输失败，发送提醒给客户端
@@ -393,11 +387,11 @@ void *pthread_check_file(void *arg)
 返回值：     无
 
 算法说明：   while循环不断遍历  对文件大小进行字符串解析
-
+```
  
 
 5.
-
+```
 void mes_recvfile_fail(int id)
 
 功能：      处理接收文件中断信息，并询问是否继续接收
@@ -409,11 +403,11 @@ void mes_recvfile_fail(int id)
 算法说明：   对文件大小进行字符串解析 询问是否继续接受文件
 
                      开启线程写文件
-
+```
  
 
 6.
-
+```
 void file_send_begin(PACK *recv_pack) 
 
 功能：       客户端请求接收文件，解析出客户端已经
@@ -437,11 +431,11 @@ void *file_send_send(void *file_send_begin_t)
 返回值：     无
 
 算法说明：   对文件大小进行字符串解析   while循环发送文件
-
+```
  
 
 7.
-
+```
 void *pthread_recv_file(void *par_t) 
 
 功能：       接收文件线程，从存储接收包的地方检索到信息
@@ -491,12 +485,10 @@ void *pthread_check_file(void *arg)
 返回值：     无
 
 算法说明：   while循环不断遍历  对文件大小进行字符串解析
+```
 
  
 
- 
-
-其他说明
 
 3.2.2 模块2
 
