@@ -113,10 +113,10 @@ The ChatRoom based on Linux/Epoll
 
 ### 3. 模块设计
 
-3.1 程序函数调用图及模块化分
+#### 3.1 程序函数调用图及模块化分
 
-Client总图：
-
+##### Client总图：
+![Client总图](http://img.blog.csdn.net/20160905205507825?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
  
 
 模块划分图：
