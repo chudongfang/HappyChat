@@ -1,9 +1,5 @@
-# HappyChat  开心聊
-    The ChatRoom based on Linux/Epoll
-    一个基于Linux平台的聊天室
-
-
-## 项目名称: Happy_Chat
+# HappyChat/开心聊
+    The ChatRoom based on Linux/Epoll /  一个基于Linux平台的聊天室
 
 ## 项目作者：  楚东方    
 
