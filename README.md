@@ -106,10 +106,15 @@ The ChatRoom based on Linux/Epoll
 
         表中变量:recv_name varchar(1024)    send_name varchar(1024)  mes varchar(2048)
 
+---
+ 
 ### 2. 数据结构说明
 
     本程序主要采用数组做为数据结构，包括数组元素的删除，添加，遍历。
     数组作为一种线性结构，以包的形式进行定义。
+
+
+---
 
 ### 3. 模块设计
 
@@ -119,27 +124,29 @@ The ChatRoom based on Linux/Epoll
 ![Client总图](http://img.blog.csdn.net/20160905205507825?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
  
 
-模块划分图：
+##### 模块划分图：
 
+![模块划分图](http://img.blog.csdn.net/20160905205524313?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+![模块划分图](http://img.blog.csdn.net/20160905205603935?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+ 
+
+##### Server总图：
+
+![Server总图](http://img.blog.csdn.net/20160905205616826?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
  
 
  
 
-Server总图：
-
+##### 模块划分：
+![模块划分](http://img.blog.csdn.net/20160905205627544?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+ 
+![模块划分](http://img.blog.csdn.net/20160905205639794?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
  
 
- 
+#### 3.2 功能设计说明
 
-模块划分：
-
- 
-
- 
-
-3.2 功能设计说明
-
-3.2.1 模块1
+##### 3.2.1 模块1
 
 功能描述
 
