@@ -1,27 +1,11 @@
-# HappyChat
-The ChatRoom based on Linux/Epoll
-
-
-
-
-
-## Analysis
-
-[自写聊天室_LinuxC实现(0)——初步代码实现](http://blog.csdn.net/chudongfang2015/article/details/52250340)
-
-[自写聊天室_LinuxC实现(1)——项目部署遇到问题及解决方法](http://blog.csdn.net/chudongfang2015/article/details/52371407)
-
-[自写聊天室_LinuxC实现(2)——服务端模块化优化及流程图](http://blog.csdn.net/chudongfang2015/article/details/52389918)
-
-[自写聊天室_LinuxC实现(3)——客户端模块化优化及流程图](http://blog.csdn.net/chudongfang2015/article/details/52404133)
-
-[ 自写聊天室_LinuxC实现(4)——项目文档](http://blog.csdn.net/chudongfang2015/article/details/52443565)
-
+# HappyChat  开心聊
+    The ChatRoom based on Linux/Epoll
+    一个基于Linux平台的聊天室
 
 
 ## 项目名称: Happy_Chat
 
-## 项目作者：      楚东方    
+## 项目作者：  楚东方    
 
  
 
@@ -673,7 +657,7 @@ printf("\33[u");
 
  
 
- 
+---
 
  
 
@@ -697,14 +681,23 @@ printf("\33[u");
 
  
 
+---
+
 ### 5. 异常、错误处理
 
+
+---
 
 #### 1.输入接受问题：
 
 - 1.程序在选择功能的时候只支持数字，如果进行随意输入，程序不会进行下一步，知道输入符合条件的选项。
 
 - 2.在聊天的时候，程序不支持发送空信息，如果直接按回车键，程序将不会继续执行
+
+
+
+---
+
 
 #### 2.IP地址绑定问题：
 
@@ -715,7 +708,8 @@ printf("\33[u");
 ```
 1. addr.sin_addr.s_addr = htonl(INADDR_ANY);  
 ```
- 
+
+---
 
 #### 3.包传递问题
 ```
@@ -791,6 +785,8 @@ printf("\33[u");
 
 以上占用字节数其实是针对c/c++语言而言的，对于Java来说由于其JVM具有跨平台性因此java在32位和64位机下基本数据类型占字节数是一致的（这样才能达到跨平台通信）。
 
+---
+
 #### 4.包的重复接受问题
 
 客户端发送一个包，客户端会接受到多个包。
@@ -800,6 +796,9 @@ printf("\33[u");
 解决方法：这里我想，没有及时清除缓冲区，那我就在循环中加上usleep，等待其清空完，结果成功解决。  但由于这样太耗费时间，我猜想是因为包太大的缘故，导致清空速达减慢，后来我把包空间减小，果然解决了问题。
 
 注意：在使用epoll时一定要注意其是否即使清空缓冲区，避免多次接受。
+
+---
+
 
 #### 5.创建线程过多：
 
@@ -837,7 +836,9 @@ file locks                      (-x) unlimited
 
 2.使用pthread_attr_setstacksize在程序中改变线程栈大小。
 
- 
+
+---
+
 
 #### 6. 已知存在的问题及改善方案
 
@@ -852,3 +853,18 @@ file locks                      (-x) unlimited
    渐变色，心跳包
 
  
+
+---
+
+
+## Analysis/相关文档
+
+[自写聊天室_LinuxC实现(0)——初步代码实现](http://blog.csdn.net/chudongfang2015/article/details/52250340)
+
+[自写聊天室_LinuxC实现(1)——项目部署遇到问题及解决方法](http://blog.csdn.net/chudongfang2015/article/details/52371407)
+
+[自写聊天室_LinuxC实现(2)——服务端模块化优化及流程图](http://blog.csdn.net/chudongfang2015/article/details/52389918)
+
+[自写聊天室_LinuxC实现(3)——客户端模块化优化及流程图](http://blog.csdn.net/chudongfang2015/article/details/52404133)
+
+[ 自写聊天室_LinuxC实现(4)——项目文档](http://blog.csdn.net/chudongfang2015/article/details/52443565)
